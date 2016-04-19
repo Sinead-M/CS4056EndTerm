@@ -1,14 +1,17 @@
 package com.example.p13134841.cs4056endterm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -42,6 +45,14 @@ public class MainActivity2Activity extends AppCompatActivity {
 
         GridView imagesGridView = (GridView) findViewById(R.id.images_grid_view);
         imagesGridView.setAdapter(gridAdapter);
+
+        imagesGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public class GridAdapter extends BaseAdapter {
@@ -71,8 +82,8 @@ public class MainActivity2Activity extends AppCompatActivity {
                 itemRootView = (ViewGroup) convertView;
             }
             Thumbnail thumbnail = thumbnails.get(position);
-            TextView gridTextView = (TextView) itemRootView.findViewById(R.id.grid_text_view);
-            gridTextView.setText(thumbnail.getName());
+//            TextView gridTextView = (TextView) itemRootView.findViewById(R.id.grid_text_view);
+//            gridTextView.setText(thumbnail.getName());
             ImageView gridImageView = (ImageView) itemRootView.findViewById(R.id.grid_image_view);
             gridImageView.setImageResource(thumbnail.getImageResId());
             return itemRootView;
