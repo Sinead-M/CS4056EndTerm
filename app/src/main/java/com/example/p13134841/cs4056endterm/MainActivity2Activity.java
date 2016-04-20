@@ -33,13 +33,8 @@ public class MainActivity2Activity extends AppCompatActivity {
         thumbnails = new ArrayList<>();
         thumbnails.add(new Thumbnail(R.drawable.newbridge, "Stables"));
         thumbnails.add(new Thumbnail(R.drawable.newbridge, "Scholars"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "Spar"));
         thumbnails.add(new Thumbnail(R.drawable.newbridge, "The Paddocks"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "The Sports Bar"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "The Pavilion"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "Pizza CO"));
         thumbnails.add(new Thumbnail(R.drawable.newbridge, "Eden"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "Subway"));
 
         gridAdapter = new GridAdapter();
 
