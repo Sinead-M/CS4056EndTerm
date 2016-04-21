@@ -10,8 +10,6 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,10 +29,10 @@ public class MainActivity2Activity extends AppCompatActivity {
 
     public void setup() {
         thumbnails = new ArrayList<>();
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "Stables"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "Scholars"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "The Paddocks"));
-        thumbnails.add(new Thumbnail(R.drawable.newbridge, "Eden"));
+        thumbnails.add(new Thumbnail(R.drawable.stables, "Stables"));
+        thumbnails.add(new Thumbnail(R.drawable.scholars, "Scholars"));
+        thumbnails.add(new Thumbnail(R.drawable.paddocks, "The Paddocks"));
+        thumbnails.add(new Thumbnail(R.drawable.eden, "Eden"));
 
         gridAdapter = new GridAdapter();
 

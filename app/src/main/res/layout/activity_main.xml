@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="320dp"
-        android:src="@drawable/newbridge"
+        android:src="@drawable/ulfoodlogo"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="50dp"/>
 
