@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -75,8 +76,8 @@ public class MainActivity2Activity extends AppCompatActivity {
                 itemRootView = (ViewGroup) convertView;
             }
             Thumbnail thumbnail = thumbnails.get(position);
-//            TextView gridTextView = (TextView) itemRootView.findViewById(R.id.grid_text_view);
-//            gridTextView.setText(thumbnail.getName());
+            TextView gridTextView = (TextView) itemRootView.findViewById(R.id.grid_text_view);
+            gridTextView.setText(thumbnail.getName());
             ImageView gridImageView = (ImageView) itemRootView.findViewById(R.id.grid_image_view);
             gridImageView.setImageResource(thumbnail.getImageResId());
             return itemRootView;
