@@ -18,30 +18,39 @@
         />
     <Button
         android:id="@+id/dealstab"
-        android:layout_width="120dp"
+        android:background="@drawable/new_button"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/RestTitle"
         android:text="@string/deals"
+        style="@style/button_text"
+        android:textSize="13dp"
         android:textAllCaps="false"
         />
     <Button
         android:id="@+id/menutab"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:background="@drawable/new_button"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
         android:layout_below="@id/RestTitle"
-        android:layout_toRightOf="@id/dealstab"
-        android:layout_toEndOf="@id/dealstab"
+        android:layout_centerHorizontal="true"
         android:text="@string/menu"
+        style="@style/button_text"
+        android:textSize="13dp"
         android:textAllCaps="false"/>
     <Button
         android:id="@+id/locationtab"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:background="@drawable/new_button"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
         android:layout_below="@id/RestTitle"
-        android:layout_toRightOf="@id/menutab"
-        android:layout_toEndOf="@id/menutab"
+        android:layout_alignParentRight="true"
         android:text="@string/location"
+        style="@style/button_text"
+        android:textSize="13dp"
         android:textAllCaps="false"/>
 
 </RelativeLayout>
+
 

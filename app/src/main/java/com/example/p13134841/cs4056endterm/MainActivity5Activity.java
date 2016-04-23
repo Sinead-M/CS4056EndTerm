@@ -13,20 +13,20 @@ public class MainActivity5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity5);
 
-        Button menubutton = (Button)findViewById(R.id.menutab);
-        menubutton.setOnClickListener(new View.OnClickListener() {
+        Button dealsbutton = (Button)findViewById(R.id.dealstab);
+        dealsbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MainActivity4Activity.class);
+                Intent intent = new Intent(v.getContext(), MainActivity3Activity.class);
                 startActivity(intent);
             }
         });
 
-        Button locationbutton = (Button)findViewById(R.id.locationtab);
-        locationbutton.setOnClickListener(new View.OnClickListener() {
+        Button menubutton = (Button)findViewById(R.id.menutab);
+        menubutton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),MainActivity5Activity.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),MainActivity4Activity.class);
                 startActivity(intent);
             }
         });

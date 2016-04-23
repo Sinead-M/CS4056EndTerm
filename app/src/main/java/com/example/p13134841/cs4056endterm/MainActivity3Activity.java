@@ -59,7 +59,7 @@ public class MainActivity3Activity extends AppCompatActivity {
         names.add("DEAL 12");
         names.add("DEAL 13");
 
-        namesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_2, names);
+        namesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, names);
 
         ListView namesListView = (ListView) findViewById(R.id.listView);
         namesListView.setAdapter(namesAdapter);

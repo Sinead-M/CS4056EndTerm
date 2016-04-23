@@ -9,14 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="320dp"
         android:src="@drawable/ulfoodlogo"
-        android:layout_marginBottom="30dp"
         android:layout_marginTop="50dp"/>
 
     <Button
+        android:background="@drawable/new_button"
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Started"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        style="@style/button_text"/>
 
 </LinearLayout>
