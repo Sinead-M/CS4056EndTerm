@@ -9,7 +9,7 @@
     <string name="paddocks">The Paddocks</string>
     <string name="eden">Eden</string>
     <string name="scholars">Scholars</string>
-    <string name="deals">Today's Deals</string>
+    <string name="deals">Today\'s Deals</string>
     <string name="menu">Menu</string>
     <string name="location">Location</string>
 </resources>
