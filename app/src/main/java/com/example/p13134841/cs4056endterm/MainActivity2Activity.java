@@ -12,6 +12,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.security.Key;
 import java.util.ArrayList;
 
 
@@ -19,6 +20,8 @@ public class MainActivity2Activity extends AppCompatActivity {
 
     ArrayList<Thumbnail> thumbnails;
     GridAdapter gridAdapter;
+
+    public static final String KEY = "RESTAURANT_NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +46,30 @@ public class MainActivity2Activity extends AppCompatActivity {
         imagesGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3Activity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity3Activity.class);
+                startActivity(intent);
+
+                //Create bundle for selected restaurant data
+                Bundle myBundle = new Bundle();
+
+                switch (position) {
+                    case 0:
+                        myBundle.putString(KEY, "STABLES");
+                        break;
+                    case 1:
+                        myBundle.putString(KEY, "SCHOLARS");
+                        break;
+                    case 2:
+                        myBundle.putString(KEY, "PADDOCKS");
+                        break;
+                    case 3:
+                        myBundle.putString(KEY, "EDEN");
+                        break;
+                    default:
+                        myBundle.putString(KEY, "EDEN");
+                        break;
+                }
+                intent.putExtras(myBundle);
                 startActivity(intent);
             }
         });

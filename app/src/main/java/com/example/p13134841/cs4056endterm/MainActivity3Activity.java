@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -16,11 +17,21 @@ public class MainActivity3Activity extends AppCompatActivity {
 
     ArrayList<String> names;
     ArrayAdapter<String> namesAdapter;
+    TextView restTitle;
+    String restaurantName="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity3);
+
+        //Retrieve retaurant namefrom bundle here.
+                restaurantName = getIntent().getExtras().getString(MainActivity2Activity.KEY);
+
+        //Set title to display restaurant name from passed bundle.
+        restTitle = (TextView) findViewById(R.id.RestTitle);
+        restTitle.setText(restaurantName);
+
 
         setup();
 
@@ -45,19 +56,33 @@ public class MainActivity3Activity extends AppCompatActivity {
 
     private void setup() {
         names = new ArrayList<>();
-        names.add("DEAL 1");
-        names.add("DEAL 2");
-        names.add("DEAL 3");
-        names.add("DEAL 4");
-        names.add("DEAL 5");
-        names.add("DEAL 6");
-        names.add("DEAL 7");
-        names.add("DEAL 8");
-        names.add("DEAL 9");
-        names.add("DEAL 10");
-        names.add("DEAL 11");
-        names.add("DEAL 12");
-        names.add("DEAL 13");
+
+        if (restaurantName.equals("STABLES")) {
+            //show stables deals...etc.
+            names.add("DEAL 1");
+            names.add("DEAL 2");
+            names.add("DEAL 3");
+            names.add("DEAL 4");
+
+        } else if(restaurantName.equals("SCHOLARS")) {
+            //show scholars deals...etc.
+            names.add("DEAL 5");
+            names.add("DEAL 6");
+            names.add("DEAL 7");
+            names.add("DEAL 8");
+
+        }else if(restaurantName.equals("PADDOCKS")){
+            names.add("DEAL 9");
+            names.add("DEAL 10");
+            names.add("DEAL 11");
+            names.add("DEAL 12");
+
+        }else if(restaurantName.equals("EDEN")){
+            names.add("DEAL 13");
+            names.add("DEAL 14");
+            names.add("DEAL 15");
+            names.add("DEAL 16");
+        }
 
         namesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, names);
 
