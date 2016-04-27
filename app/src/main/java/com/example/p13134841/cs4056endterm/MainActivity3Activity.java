@@ -18,7 +18,7 @@ public class MainActivity3Activity extends AppCompatActivity {
     ArrayList<String> names;
     ArrayAdapter<String> namesAdapter;
     TextView restTitle;
-    String restaurantName="";
+    String restaurantName = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main_activity3);
 
         //Retrieve retaurant namefrom bundle here.
-                restaurantName = getIntent().getExtras().getString(MainActivity2Activity.KEY);
+        restaurantName = getIntent().getExtras().getString(MainActivity2Activity.KEY);
 
         //Set title to display restaurant name from passed bundle.
         restTitle = (TextView) findViewById(R.id.RestTitle);
@@ -35,21 +35,31 @@ public class MainActivity3Activity extends AppCompatActivity {
 
         setup();
 
-        Button menubutton = (Button)findViewById(R.id.menutab);
+        Button menubutton = (Button) findViewById(R.id.menutab);
         menubutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Intent intent = new Intent(v.getContext(),MainActivity4Activity.class);
-              startActivity(intent);
+                Intent intent = new Intent(v.getContext(), MainActivity4Activity.class);
+                //Create bundle for selected restaurant data
+                Bundle myBundle = new Bundle();
+                myBundle.putString(MainActivity2Activity.KEY, restaurantName);
+                intent.putExtras(myBundle);//PASS BUNDLE TO ACTIVITY 4
+                startActivity(intent);
+                finish();
             }
         });
 
-        Button locationbutton = (Button)findViewById(R.id.locationtab);
+        Button locationbutton = (Button) findViewById(R.id.locationtab);
         locationbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),MainActivity5Activity.class);
+                Intent intent = new Intent(v.getContext(), MainActivity5Activity.class);
+                //Create bundle for selected restaurant data
+                Bundle myBundle = new Bundle();
+                myBundle.putString(MainActivity2Activity.KEY, restaurantName);
+                intent.putExtras(myBundle);//PASS BUNDLE TO ACTIVITY 4
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -64,20 +74,20 @@ public class MainActivity3Activity extends AppCompatActivity {
             names.add("DEAL 3");
             names.add("DEAL 4");
 
-        } else if(restaurantName.equals("SCHOLARS")) {
+        } else if (restaurantName.equals("SCHOLARS")) {
             //show scholars deals...etc.
             names.add("DEAL 5");
             names.add("DEAL 6");
             names.add("DEAL 7");
             names.add("DEAL 8");
 
-        }else if(restaurantName.equals("PADDOCKS")){
+        } else if (restaurantName.equals("PADDOCKS")) {
             names.add("DEAL 9");
             names.add("DEAL 10");
             names.add("DEAL 11");
             names.add("DEAL 12");
 
-        }else if(restaurantName.equals("EDEN")){
+        } else if (restaurantName.equals("EDEN")) {
             names.add("DEAL 13");
             names.add("DEAL 14");
             names.add("DEAL 15");
