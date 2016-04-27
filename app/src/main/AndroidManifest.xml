@@ -43,10 +43,10 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity5Activity" />
-            <meta-data
+        </activity>
+        <meta-data
                 android:name="com.google.android.geo.API_KEY"
                 android:value="AIzaSyAaGrKNNMQr1Wna3Scn2-jfUSKdLqJbGT8" />
-        </activity>
     </application>
 
 </manifest>
