@@ -18,7 +18,7 @@
         />
     <Button
         android:id="@+id/dealstab"
-        android:background="@drawable/new_button"
+        android:background="@drawable/selected_button"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"

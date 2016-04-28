@@ -33,8 +33,8 @@ public class MainActivity2Activity extends AppCompatActivity {
 
     public void setup() {
         thumbnails = new ArrayList<>();
-        thumbnails.add(new Thumbnail(R.drawable.stables, "Stables"));
-        thumbnails.add(new Thumbnail(R.drawable.scholars, "Scholars"));
+        thumbnails.add(new Thumbnail(R.drawable.stables, "The Stables Club"));
+        thumbnails.add(new Thumbnail(R.drawable.scholars, "The Scholars Club"));
         thumbnails.add(new Thumbnail(R.drawable.paddocks, "The Paddocks"));
         thumbnails.add(new Thumbnail(R.drawable.eden, "Eden"));
 
@@ -53,19 +53,19 @@ public class MainActivity2Activity extends AppCompatActivity {
 
                 switch (position) {
                     case 0:
-                        myBundle.putString(KEY, "STABLES");
+                        myBundle.putString(KEY, "The Stables Club");
                         break;
                     case 1:
-                        myBundle.putString(KEY, "SCHOLARS");
+                        myBundle.putString(KEY, "The Scholars Club");
                         break;
                     case 2:
-                        myBundle.putString(KEY, "PADDOCKS");
+                        myBundle.putString(KEY, "The Paddocks ");
                         break;
                     case 3:
-                        myBundle.putString(KEY, "EDEN");
+                        myBundle.putString(KEY, "Eden");
                         break;
                     default:
-                        myBundle.putString(KEY, "EDEN");
+                        myBundle.putString(KEY, "Eden");
                         break;
                 }
                 intent.putExtras(myBundle);

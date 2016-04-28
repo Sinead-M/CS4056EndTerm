@@ -34,11 +34,11 @@ public class MainActivity4Activity extends AppCompatActivity {
 
         //CHOOSE MENU ARRAY BASED ON RESTAURANT NAME.
 
-        if(restaurantName.equals("STABLES")) {
+        if(restaurantName.equals("The Stables Club")) {
             menuItems = getApplicationContext().getResources().getStringArray(R.array.stables_menu);
-        } else if(restaurantName.equals("PADDOCKS")) {
+        } else if(restaurantName.equals("The Paddocks")) {
             menuItems = getApplicationContext().getResources().getStringArray(R.array.paddocks_menu);
-        } else if(restaurantName.equals("SCHOLARS")) {
+        } else if(restaurantName.equals("The Scholars Club")) {
             menuItems = getApplicationContext().getResources().getStringArray(R.array.scholars_menu);
         } else {
             menuItems = getApplicationContext().getResources().getStringArray(R.array.eden_menu);

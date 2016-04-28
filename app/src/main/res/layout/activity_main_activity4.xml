@@ -30,7 +30,7 @@
         />
     <Button
         android:id="@+id/menutab"
-        android:background="@drawable/new_button"
+        android:background="@drawable/selected_button"
         android:layout_width="95dp"
         android:layout_height="54dp"
         android:layout_below="@id/RestTitle"

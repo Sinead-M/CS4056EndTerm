@@ -67,27 +67,27 @@ public class MainActivity3Activity extends AppCompatActivity {
     private void setup() {
         names = new ArrayList<>();
 
-        if (restaurantName.equals("STABLES")) {
+        if (restaurantName.equals("The Stables Club")) {
             //show stables deals...etc.
             names.add("DEAL 1");
             names.add("DEAL 2");
             names.add("DEAL 3");
             names.add("DEAL 4");
 
-        } else if (restaurantName.equals("SCHOLARS")) {
+        } else if (restaurantName.equals("The Scholars Club")) {
             //show scholars deals...etc.
             names.add("DEAL 5");
             names.add("DEAL 6");
             names.add("DEAL 7");
             names.add("DEAL 8");
 
-        } else if (restaurantName.equals("PADDOCKS")) {
+        } else if (restaurantName.equals("The Paddocks")) {
             names.add("DEAL 9");
             names.add("DEAL 10");
             names.add("DEAL 11");
             names.add("DEAL 12");
 
-        } else if (restaurantName.equals("EDEN")) {
+        } else {
             names.add("DEAL 13");
             names.add("DEAL 14");
             names.add("DEAL 15");

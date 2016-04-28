@@ -41,7 +41,7 @@
         android:textAllCaps="false"/>
     <Button
         android:id="@+id/locationtab"
-        android:background="@drawable/new_button"
+        android:background="@drawable/selected_button"
         android:layout_width="95dp"
         android:layout_height="54dp"
         android:layout_below="@id/RestTitle"
@@ -50,13 +50,43 @@
         style="@style/button_text"
         android:textSize="13dp"
         android:textAllCaps="false"/>
-    <fragment
+
+    <TextView
+        android:id="@+id/locationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
         android:layout_below="@id/dealstab"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/locationtext"
+        />
+
+    <TextView
+        android:id="@+id/infotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information:"
+        android:layout_below="@id/location"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/infotext"/>
+
+    <fragment
+        android:layout_below="@id/info"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:name="com.google.android.gms.maps.MapFragment"
         android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
 
