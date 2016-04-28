@@ -59,7 +59,7 @@ public class MainActivity2Activity extends AppCompatActivity {
                         myBundle.putString(KEY, "The Scholars Club");
                         break;
                     case 2:
-                        myBundle.putString(KEY, "The Paddocks ");
+                        myBundle.putString(KEY, "The Paddocks");
                         break;
                     case 3:
                         myBundle.putString(KEY, "Eden");
