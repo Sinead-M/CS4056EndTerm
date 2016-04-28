@@ -47,7 +47,6 @@ public class MainActivity2Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity3Activity.class);
-                startActivity(intent);
 
                 //Create bundle for selected restaurant data
                 Bundle myBundle = new Bundle();
