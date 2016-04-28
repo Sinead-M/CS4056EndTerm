@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CS4056EndTerm.iml" filepath="$PROJECT_DIR$/CS4056EndTerm.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gitProject2.iml" filepath="$PROJECT_DIR$/gitProject2.iml" />
     </modules>
   </component>
 </project>
