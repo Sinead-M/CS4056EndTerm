@@ -50,6 +50,7 @@ public class MainActivity4Activity extends AppCompatActivity {
             TextView tv = new TextView(getApplicationContext());
             tv.setText(item);
             tv.setTextColor(Color.BLACK);
+            tv.setTextSize(15);
             menuView.addView(tv);
         }
 

@@ -17,45 +17,74 @@
     <!--Setup menu arrays to hold menu items for each restaurant-->
 
     <string-array name="stables_menu">
-        <item>Goats cheese and caramelised onion tart (V)	€5.90</item>
-        <item>Smoked haddock with onion sauce (GF)		    €6.95</item>
-        <item>Spicy Chicken fajita wrap				        €5</item>
-        <item>Cheeseburger	and chips				        €5</item>
-        <item>Tomato and basil soup					        €2.30</item>
-        <item>Roast stuffed loin of pork with apple sauce	€6.95</item>
-        <item>Golden crumbed chicken in garlic butter		€6.95</item>
-        <item>Chicken and broccoli bake				        €5.90</item>
-        <item>Spring rolls with salad and chips (V)			€5.90</item>
+        <item>Goats cheese and caramelised onion tart (V)</item>
+        <item>€5.90</item>
+        <item>Smoked haddock with onion sauce (GF)		    </item>
+        <item>€6.95</item>
+        <item>Spicy Chicken fajita wrap				        </item>
+        <item>€5</item>
+        <item>Cheeseburger	and chips				        </item>
+        <item>€5</item>
+        <item>Tomato and basil soup					        </item>
+        <item>€2.30</item>
+        <item>Roast stuffed loin of pork with apple sauce	</item>
+        <item>€6.95</item>
+        <item>Golden crumbed chicken in garlic butter		</item>
+        <item>€6.95</item>
+        <item>Chicken and broccoli bake				        </item>
+        <item>€5.90</item>
+        <item>Spring rolls with salad and chips (V)			</item>
+        <item>€5.90</item>
     </string-array>
 
     <string-array name="paddocks_menu">
-        <item>Toasted  sandwich and vegetable soup	(V)		€5</item>
-        <item>Pizza wrap and chips (V)				        €5</item>
-        <item>BLT with chips/salad					        €5</item>
-        <item>Lasagne and chips					            €5.25</item>
-        <item>Cheese Burger and chips				        €5.50</item>
-        <item>Chicken and mushroom vol au vent and chips	€5.50</item>
-        <item>Chilli con carne and rice/chips				€5.50</item>
-        <item>Baked fillet of cod and chips				    €5.50</item>
-        <item>Beef curry with rice/chips				    €5.50</item>
+        <item>Toasted  sandwich and vegetable soup	(V)		</item>
+        <item>€5</item>
+        <item>Pizza wrap and chips (V)				        </item>
+        <item>€5</item>
+        <item>BLT with chips/salad					        </item>
+        <item>€5</item>
+        <item>Lasagne and chips					            </item>
+        <item>€5.25</item>
+        <item>Cheese Burger and chips				        </item>
+        <item>€5.50</item>
+        <item>Chicken and mushroom vol au vent and chips	</item>
+        <item>€5.50</item>
+        <item>Chilli con carne and rice/chips				</item>
+        <item>€5.50</item>
+        <item>Baked fillet of cod and chips				    </item>
+        <item>€5.50</item>
+        <item>Beef curry with rice/chips				    </item>
+        <item>€5.50</item>
     </string-array>
 
     <string-array name="scholars_menu">
-        <item>Cream of Vegetable soup (V)				        €2.95</item>
-        <item>Roast turkey with lemon and thyme stuffing (GF)	    €7</item>
-        <item>Beef meatballs in a brandy and black pepper sauce	€7</item>
-        <item>BBQ pork spare ribs (GF)				            €7</item>
-        <item>Vegetarian lasagne (V)				            €7</item>
+        <item>Cream of Vegetable soup (V)				        </item>
+        <item>€2.95</item>
+        <item>Roast turkey with lemon and thyme stuffing (GF)	  </item>
+        <item>€7</item>
+        <item>Beef meatballs in a brandy and black pepper sauce	</item>
+        <item>€7</item>
+        <item>BBQ pork spare ribs (GF)				            </item>
+        <item>€7</item>
+        <item>Vegetarian lasagne (V)				            </item>
+        <item>€7</item>
 
     </string-array>
 
     <string-array name="eden_menu">
-        <item>Atlantic seafood pie					    €6.85</item>
-        <item>Wholewheat pasta Amatricana			    €4.45</item>
-        <item>Vegetarian spring rolls (V)				€5.25</item>
-        <item>Cream of mushroom and tarragon soup		€2</item>
-        <item>Irish beef burger					        €4.45</item>
-        <item>Chicken fillet burger					    €4.45</item>
+        <item>Atlantic seafood pie					    </item>
+        <item>€6.85</item>
+        <item>Wholewheat pasta Amatricana			    </item>
+        <item>€4.45</item>
+        <item>Vegetarian spring rolls (V)				</item>
+        <item>€5.25</item>
+        <item>Cream of mushroom and tarragon soup		</item>
+        <item>€2</item>
+        <item>Irish beef burger					       </item>
+        <item>€4.45</item>
+        <item>Chicken fillet burger					    </item>
+        <item>€4.45</item>
     </string-array>
 
 </resources>
