@@ -19,12 +19,22 @@
         android:id="@+id/appinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find the best deals in your favourite on-campus restaurants"
+        android:text="Find the best deals in your favourite"
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_below="@+id/ullogo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/appinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On-Campus Restaurants"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/appinfo"
         android:layout_centerHorizontal="true"
-       android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp" />
 
 
     <Button
@@ -35,7 +45,7 @@
         android:text="Get Started"
         android:layout_gravity="center_horizontal"
         style="@style/button_text"
-        android:layout_below="@id/appinfo"
+        android:layout_below="@id/appinfo2"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
